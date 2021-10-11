@@ -1,0 +1,22 @@
+public class point2D {
+	double x_coordinate;
+	double y_coordinate;
+	point2D(double x,double y){
+		x_coordinate = x;
+		y_coordinate = y;
+		}
+	point2D(point2D myObj){
+	this.x_coordinate = myObj.x_coordinate;
+	this.y_coordinate = myObj.y_coordinate;
+	}
+	void display(){
+	System.out.println("Point:" + x_coordinate +',' +y_coordinate);
+	}
+	public static void main(String args[])
+	{
+		point2D obj1 = new point2D(40,20);
+		
+	obj1.display();
+
+	}
+	}
